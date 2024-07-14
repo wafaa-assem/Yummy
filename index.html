@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <!-- icon -->
+    <link rel="icon" href="./img/logo.png" />
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="bg-black">
+    <!-- loading -->
+    <div
+      class="loading position-absolute top-0 bottom-0 start-0 end-0 bg-black d-flex align-items-center justify-content-center"
+    >
+      <i class="text-white fa-solid fa-spinner fa-spin fa-7x"></i>
+    </div>
+    <!-- nav sidebar start -->
+    <nav class="d-flex position-fixed top-0 bottom-0 start-0">
+      <div class="top-nav bg-black">
+        <div
+          class="text-white d-flex flex-column justify-content-between min-vh-100 py-4 ps-4"
+        >
+          <ul class="first-ul ps-0">
+            <li><a id="navigate1" href="#theSearch">Search</a></li>
+            <li><a id="navigate2" href="#categories">Categories</a></li>
+            <li><a id="navigate3" href="#areas">Area</a></li>
+            <li><a id="navigate4" href="#ingredients">Ingredients</a></li>
+            <li><a id="navigate5" href="#contactUs">Contact Us</a></li>
+          </ul>
+          <div style="width: 250px">
+            <ul class="d-flex mb-0 ps-0">
+              <li>
+                <a href="$"
+                  ><i class="fa-brands fa-facebook text-white me-2"></i
+                ></a>
+              </li>
+              <li>
+                <a href="$"
+                  ><i class="fa-brands fa-twitter text-white me-2"></i
+                ></a>
+              </li>
+              <li>
+                <a href="$"
+                  ><i class="fa-solid fa-globe text-white me-2"></i
+                ></a>
+              </li>
+            </ul>
+            <p>Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white d-flex flex-column justify-content-between align-items-center py-4 px-2"
+      >
+        <img src="./img/logo.png" style="width: 50px" alt="logo" />
+        <div>
+          <i class="fa-solid fa-bars open fa-2x"></i>
+          <i class="fa-solid fa-xmark close fa-2x"></i>
+        </div>
+        <div class="d-flex flex-column">
+          <i class="fa-solid fa-globe mb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- main start  -->
+    <!-- home  -->
+    <div class="container my-5 home" id="theHome">
+      <div class="row g-4" id="home"></div>
+    </div>
+    <!-- search -->
+    <div class="container my-5" id="theSearch">
+      <div class="row g-4 d-none">
+        <div class="col-md-6">
+          <div class="inner">
+            <input
+              id="searchName"
+              type="serach"
+              placeholder="Search By Name"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="inner">
+            <input
+              id="searchLetter"
+              maxlength="1"
+              type="serach"
+              placeholder="Search By First Letter"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 g-4" id="search"></div>
+    </div>
+    <!-- categories -->
+    <div class="container my-5" id="categories">
+      <div class="row g-4" id="category"></div>
+    </div>
+    <!-- area -->
+    <div class="container my-5" id="areas">
+      <div class="row g-4" id="area"></div>
+    </div>
+    <!-- ingredients -->
+    <div class="container my-5" id="ingredients">
+      <div class="row g-4" id="ingredient"></div>
+    </div>
+    <!-- contact us -->
+    <div class="container my-5 d-none" id="contactUs">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="inner">
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              class="form-control"
+              id="name"
+            />
+            <div class="alert alert-danger mt-1 d-none nameAlert" role="alert">
+              Enter valid name must starts with minimum two characters
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="inner">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="form-control"
+              id="email"
+            />
+            <div class="alert alert-danger mt-1 d-none emailAlert" role="alert">
+              Enter valid email *exemple@yyy.zzz
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="inner">
+            <input
+              type="tel"
+              placeholder="Enter Your Phone"
+              class="form-control"
+              id="tel"
+            />
+            <div class="alert alert-danger mt-1 d-none telAlert" role="alert">
+              Enter valid Phone Number
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="inner">
+            <input
+              type="number"
+              placeholder="Enter Your Age"
+              class="form-control"
+              id="age"
+            />
+            <div class="alert alert-danger mt-1 d-none ageAlert" role="alert">
+              Enter valid age
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="inner">
+            <input
+              type="password"
+              placeholder="Enter Your Password"
+              class="form-control"
+              id="pass"
+            />
+            <div class="alert alert-danger mt-1 d-none passAlert" role="alert">
+              Enter valid password *Minimum eight characters, at least one
+              letter and one number:*
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="inner">
+            <input
+              type="password"
+              placeholder="Repassword"
+              class="form-control"
+              id="pass2"
+            />
+            <div class="alert alert-danger mt-1 d-none pass2Alert" role="alert">
+              Confirm Password
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-outline-danger disabled" id="submit">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
